@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISAnotherTestProjectInvoice",
+  "modelName": "i-i-s-another-test-project-invoice",
+  "className": "Invoice",
+  "nameSpace": "IIS.AnotherTestProject",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "saleDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "i-i-s-another-test-project-client",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "invoiceItem",
+      "relatedTo": "i-i-s-another-test-project-invoice-item",
+      "inverse": "invoice"
+    }
+  ],
+  "projections": [
+    {
+      "name": "InvoiceE",
+      "modelName": "i-i-s-another-test-project-invoice",
+      "attrs": [
+        {
+          "name": "saleDate",
+          "caption": "Sale date",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Client",
+          "name": "client",
+          "relatedTo": "i-i-s-another-test-project-client",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "InvoiceItemE",
+          "caption": "Invoice item",
+          "name": "invoiceItem",
+          "relatedTo": "i-i-s-another-test-project-invoice-item",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "InvoiceL",
+      "modelName": "i-i-s-another-test-project-invoice",
+      "attrs": [
+        {
+          "name": "saleDate",
+          "caption": "Sale date",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "client",
+          "relatedTo": "i-i-s-another-test-project-client",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

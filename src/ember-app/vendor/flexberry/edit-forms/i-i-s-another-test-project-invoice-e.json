@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Client",
+      "projection": "ClientL",
+      "detailModelName": null
+    },
+    {
+      "master": "product",
+      "displayAttributeName": "name",
+      "required": true,
+      "relationName": "InvoiceItem.Product",
+      "projection": "ProductL",
+      "detailModelName": "i-i-s-another-test-project-invoice-item"
+    }
+  ],
+  "external": false,
+  "caption": "Invoice",
+  "name": "IISAnotherTestProjectInvoiceE",
+  "className": "InvoiceE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-another-test-project-invoice",
+      "modelProjection": "InvoiceE"
+    }
+  ]
+}

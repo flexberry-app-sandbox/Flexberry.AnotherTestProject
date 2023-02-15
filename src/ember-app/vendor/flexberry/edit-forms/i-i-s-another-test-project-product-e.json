@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Product",
+  "name": "IISAnotherTestProjectProductE",
+  "className": "ProductE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-another-test-project-product",
+      "modelProjection": "ProductE"
+    }
+  ]
+}

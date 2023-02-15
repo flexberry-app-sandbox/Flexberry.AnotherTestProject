@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-another-test-project-product-e",
+  "editForm": "i-i-s-another-test-project-product-e",
+  "external": false,
+  "caption": "Product",
+  "name": "IISAnotherTestProjectProductL",
+  "className": "ProductL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-another-test-project-product",
+      "modelProjection": "ProductL"
+    }
+  ]
+}

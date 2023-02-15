@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-another-test-project-client-e",
+  "editForm": "i-i-s-another-test-project-client-e",
+  "external": false,
+  "caption": "Client",
+  "name": "IISAnotherTestProjectClientL",
+  "className": "ClientL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-another-test-project-client",
+      "modelProjection": "ClientL"
+    }
+  ]
+}

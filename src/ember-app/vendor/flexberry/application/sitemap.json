@@ -1,0 +1,44 @@
+﻿{
+  "applicationCaption": "Another test project",
+  "applicationTitle": "Another test project",
+  "items": [
+    {
+      "link": null,
+      "menuName": "подсистема-продаж",
+      "caption": "Подсистема продаж",
+      "title": "Подсистема продаж",
+      "children": [
+        {
+          "link": "i-i-s-another-test-project-invoice-l",
+          "menuName": null,
+          "caption": "Накладная",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": null,
+          "menuName": "справочники",
+          "caption": "Справочники",
+          "title": "Справочники",
+          "children": [
+            {
+              "link": "i-i-s-another-test-project-client-l",
+              "menuName": null,
+              "caption": "Клиент",
+              "title": "Client",
+              "children": null
+            },
+            {
+              "link": "i-i-s-another-test-project-product-l",
+              "menuName": null,
+              "caption": "Товар",
+              "title": "Product",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

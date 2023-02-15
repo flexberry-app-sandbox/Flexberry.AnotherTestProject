@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Client",
+  "name": "IISAnotherTestProjectClientE",
+  "className": "ClientE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-another-test-project-client",
+      "modelProjection": "ClientE"
+    }
+  ]
+}

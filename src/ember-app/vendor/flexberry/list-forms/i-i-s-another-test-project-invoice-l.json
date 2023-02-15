@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-another-test-project-invoice-e",
+  "editForm": "i-i-s-another-test-project-invoice-e",
+  "external": false,
+  "caption": "Invoice",
+  "name": "IISAnotherTestProjectInvoiceL",
+  "className": "InvoiceL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-another-test-project-invoice",
+      "modelProjection": "InvoiceL"
+    }
+  ]
+}

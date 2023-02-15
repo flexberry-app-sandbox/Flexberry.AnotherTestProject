@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISAnotherTestProjectInvoiceItem",
+  "modelName": "i-i-s-another-test-project-invoice-item",
+  "className": "InvoiceItem",
+  "nameSpace": "IIS.AnotherTestProject",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "amount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "product",
+      "relatedTo": "i-i-s-another-test-project-product",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "invoice",
+      "relatedTo": "i-i-s-another-test-project-invoice",
+      "inverse": "invoiceItem"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "InvoiceItemE",
+      "modelName": "i-i-s-another-test-project-invoice-item",
+      "attrs": [
+        {
+          "name": "amount",
+          "caption": "Amount",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Product",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Product",
+          "name": "product",
+          "relatedTo": "i-i-s-another-test-project-product",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
