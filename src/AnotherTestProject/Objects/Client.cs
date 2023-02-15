@@ -30,11 +30,11 @@ namespace IIS.AnotherTestProject
     [Caption("Клиент")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ClientE", new string[] {
-            "Name as \'Name\'",
-            "Surname as \'Surname\'"})]
+            "Name as \'Имя\'",
+            "Surname as \'Фамилия\'"})]
     [View("ClientL", new string[] {
-            "Name as \'Name\'",
-            "Surname as \'Surname\'"})]
+            "Name as \'Имя\'",
+            "Surname as \'Фамилия\'"})]
     public class Client : ICSSoft.STORMNET.DataObject
     {
         

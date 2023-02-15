@@ -36,22 +36,22 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('InvoiceE', 'i-i-s-another-test-project-invoice', {
-    saleDate: attr('Sale date', { index: 0 }),
-    client: belongsTo('i-i-s-another-test-project-client', 'Client', {
-      name: attr('Name', { index: 2, hidden: true })
+    saleDate: attr('Дата продажи', { index: 0 }),
+    client: belongsTo('i-i-s-another-test-project-client', 'Клиент', {
+      name: attr('Имя клиента', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'name' }),
-    invoiceItem: hasMany('i-i-s-another-test-project-invoice-item', 'Invoice item', {
-      amount: attr('Amount', { index: 0 }),
-      product: belongsTo('i-i-s-another-test-project-product', 'Product', {
-        name: attr('Name', { index: 2, hidden: true })
+    invoiceItem: hasMany('i-i-s-another-test-project-invoice-item', 'Товарная позиция', {
+      amount: attr('Количество', { index: 0 }),
+      product: belongsTo('i-i-s-another-test-project-product', 'Товар', {
+        name: attr('Название товара', { index: 2, hidden: true })
       }, { index: 1, displayMemberPath: 'name' })
     })
   });
 
   modelClass.defineProjection('InvoiceL', 'i-i-s-another-test-project-invoice', {
-    saleDate: attr('Sale date', { index: 0 }),
-    client: belongsTo('i-i-s-another-test-project-client', 'Name', {
-      name: attr('Name', { index: 1 })
+    saleDate: attr('Дата продажи', { index: 0 }),
+    client: belongsTo('i-i-s-another-test-project-client', 'Клиент', {
+      name: attr('Клиент', { index: 1 })
     }, { index: -1, hidden: true })
   });
 };

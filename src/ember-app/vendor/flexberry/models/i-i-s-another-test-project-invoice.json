@@ -39,7 +39,7 @@
       "attrs": [
         {
           "name": "saleDate",
-          "caption": "Sale date",
+          "caption": "Дата продажи",
           "hidden": false,
           "index": 0
         }
@@ -54,14 +54,14 @@
           "attrs": [
             {
               "name": "name",
-              "caption": "Name",
+              "caption": "Имя клиента",
               "hidden": true,
               "index": 2
             }
           ],
           "index": 1,
           "type": "standard",
-          "caption": "Client",
+          "caption": "Клиент",
           "name": "client",
           "relatedTo": "i-i-s-another-test-project-client",
           "inverse": null
@@ -70,7 +70,7 @@
       "hasMany": [
         {
           "projectionName": "InvoiceItemE",
-          "caption": "Invoice item",
+          "caption": "Товарная позиция",
           "name": "invoiceItem",
           "relatedTo": "i-i-s-another-test-project-invoice-item",
           "inverse": null
@@ -83,7 +83,7 @@
       "attrs": [
         {
           "name": "saleDate",
-          "caption": "Sale date",
+          "caption": "Дата продажи",
           "hidden": false,
           "index": 0
         }
@@ -98,14 +98,14 @@
           "attrs": [
             {
               "name": "name",
-              "caption": "Name",
+              "caption": "Клиент",
               "hidden": false,
               "index": 1
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "Name",
+          "caption": "Клиент",
           "name": "client",
           "relatedTo": "i-i-s-another-test-project-client",
           "inverse": null

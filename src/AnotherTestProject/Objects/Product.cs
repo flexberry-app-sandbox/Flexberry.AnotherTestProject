@@ -30,11 +30,11 @@ namespace IIS.AnotherTestProject
     [Caption("Товар")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ProductE", new string[] {
-            "Name as \'Name\'",
-            "Price as \'Price\'"})]
+            "Name as \'Название\'",
+            "Price as \'Цена\'"})]
     [View("ProductL", new string[] {
-            "Name as \'Name\'",
-            "Price as \'Price\'"})]
+            "Name as \'Название\'",
+            "Price as \'Цена\'"})]
     public class Product : ICSSoft.STORMNET.DataObject
     {
         

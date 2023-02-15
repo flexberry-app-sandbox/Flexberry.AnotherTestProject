@@ -30,16 +30,16 @@ namespace IIS.AnotherTestProject
     [Caption("Накладная")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("InvoiceE", new string[] {
-            "SaleDate as \'Sale date\'",
-            "Client as \'Client\'",
-            "Client.Name as \'Name\'"}, Hidden=new string[] {
+            "SaleDate as \'Дата продажи\'",
+            "Client as \'Клиент\'",
+            "Client.Name as \'Имя клиента\'"}, Hidden=new string[] {
             "Client.Name"})]
-    [AssociatedDetailViewAttribute("InvoiceE", "InvoiceItem", "InvoiceItemE", true, "", "Invoice item", true, new string[] {
+    [AssociatedDetailViewAttribute("InvoiceE", "InvoiceItem", "InvoiceItemE", true, "", "Товарная позиция", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("InvoiceE", "Client", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Name")]
     [View("InvoiceL", new string[] {
-            "SaleDate as \'Sale date\'",
-            "Client.Name as \'Name\'"})]
+            "SaleDate as \'Дата продажи\'",
+            "Client.Name as \'Клиент\'"})]
     public class Invoice : ICSSoft.STORMNET.DataObject
     {
         

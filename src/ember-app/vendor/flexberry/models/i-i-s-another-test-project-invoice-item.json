@@ -40,7 +40,7 @@
       "attrs": [
         {
           "name": "amount",
-          "caption": "Amount",
+          "caption": "Количество",
           "hidden": false,
           "index": 0
         }
@@ -55,14 +55,14 @@
           "attrs": [
             {
               "name": "name",
-              "caption": "Name",
+              "caption": "Название товара",
               "hidden": true,
               "index": 2
             }
           ],
           "index": 1,
           "type": "standard",
-          "caption": "Product",
+          "caption": "Товар",
           "name": "product",
           "relatedTo": "i-i-s-another-test-project-product",
           "inverse": null

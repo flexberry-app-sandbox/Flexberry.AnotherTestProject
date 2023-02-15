@@ -26,12 +26,12 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ClientE', 'i-i-s-another-test-project-client', {
-    name: attr('Name', { index: 0 }),
-    surname: attr('Surname', { index: 1 })
+    name: attr('Имя', { index: 0 }),
+    surname: attr('Фамилия', { index: 1 })
   });
 
   modelClass.defineProjection('ClientL', 'i-i-s-another-test-project-client', {
-    name: attr('Name', { index: 0 }),
-    surname: attr('Surname', { index: 1 })
+    name: attr('Имя', { index: 0 }),
+    surname: attr('Фамилия', { index: 1 })
   });
 };

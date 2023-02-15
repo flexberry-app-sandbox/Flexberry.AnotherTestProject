@@ -27,12 +27,12 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ProductE', 'i-i-s-another-test-project-product', {
-    name: attr('Name', { index: 0 }),
-    price: attr('Price', { index: 1 })
+    name: attr('Название', { index: 0 }),
+    price: attr('Цена', { index: 1 })
   });
 
   modelClass.defineProjection('ProductL', 'i-i-s-another-test-project-product', {
-    name: attr('Name', { index: 0 }),
-    price: attr('Price', { index: 1 })
+    name: attr('Название', { index: 0 }),
+    price: attr('Цена', { index: 1 })
   });
 };

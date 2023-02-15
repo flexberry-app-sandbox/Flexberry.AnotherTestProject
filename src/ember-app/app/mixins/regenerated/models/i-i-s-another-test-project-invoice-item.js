@@ -36,9 +36,9 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('InvoiceItemE', 'i-i-s-another-test-project-invoice-item', {
-    amount: attr('Amount', { index: 0 }),
-    product: belongsTo('i-i-s-another-test-project-product', 'Product', {
-      name: attr('Name', { index: 2, hidden: true })
+    amount: attr('Количество', { index: 0 }),
+    product: belongsTo('i-i-s-another-test-project-product', 'Товар', {
+      name: attr('Название товара', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'name' })
   });
 };

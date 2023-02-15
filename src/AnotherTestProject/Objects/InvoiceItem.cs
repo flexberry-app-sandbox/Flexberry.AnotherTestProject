@@ -30,9 +30,9 @@ namespace IIS.AnotherTestProject
     [Caption("Товарная позиция")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("InvoiceItemE", new string[] {
-            "Amount as \'Amount\'",
-            "Product as \'Product\'",
-            "Product.Name as \'Name\'"}, Hidden=new string[] {
+            "Amount as \'Количество\'",
+            "Product as \'Товар\'",
+            "Product.Name as \'Название товара\'"}, Hidden=new string[] {
             "Product.Name"})]
     [MasterViewDefineAttribute("InvoiceItemE", "Product", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Name")]
     public class InvoiceItem : ICSSoft.STORMNET.DataObject
