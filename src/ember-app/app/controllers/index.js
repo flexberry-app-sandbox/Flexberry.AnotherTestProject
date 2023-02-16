@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-another-test-project-invoice-l',
             caption: i18n.t('forms.application.sitemap.подсистема-продаж.i-i-s-another-test-project-invoice-l.caption'),
             title: i18n.t('forms.application.sitemap.подсистема-продаж.i-i-s-another-test-project-invoice-l.title'),
-            icon: 'suitcase',
+            icon: 'folder open',
             children: null
           }, {
             link: null,
@@ -32,13 +32,13 @@ export default Controller.extend({
               link: 'i-i-s-another-test-project-client-l',
               caption: i18n.t('forms.application.sitemap.подсистема-продаж.справочники.i-i-s-another-test-project-client-l.caption'),
               title: i18n.t('forms.application.sitemap.подсистема-продаж.справочники.i-i-s-another-test-project-client-l.title'),
-              icon: 'address card',
+              icon: 'calendar',
               children: null
             }, {
               link: 'i-i-s-another-test-project-product-l',
               caption: i18n.t('forms.application.sitemap.подсистема-продаж.справочники.i-i-s-another-test-project-product-l.caption'),
               title: i18n.t('forms.application.sitemap.подсистема-продаж.справочники.i-i-s-another-test-project-product-l.title'),
-              icon: 'tasks',
+              icon: 'phone',
               children: null
             }]
           }]

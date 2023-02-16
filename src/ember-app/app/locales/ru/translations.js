@@ -23,7 +23,7 @@ $.extend(true, translations, {
     'i-i-s-another-test-project-product': IISAnotherTestProjectProductModel
   },
 
-  'application-name': 'Another test project',
+  'application-name': 'Подсистема продаж',
 
   forms: {
     loading: {
@@ -62,7 +62,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Another test project',
+        'application-name': 'Подсистема продаж',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -73,7 +73,7 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Another test project',
+          caption: 'Подсистема продаж',
           title: 'Another test project'
         },
         'application-version': {
